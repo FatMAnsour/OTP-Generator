@@ -40,13 +40,13 @@ for i in range(6):
     OTP+=digits[math.floor(random.random()*10)]
 
 def send(user_email):
-    email_sender = 'fatmamansour989@gmail.com'
-    email_password = 'qmxeizqnihpmlunk'
+    email_sender = 'put user email here'
+    email_password = 'put App password here'
 
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('fatmamansour989@gmail.com', 'qmxeizqnihpmlunk')
+    server.login('put user email here','put App password here')
 
     msg = 'Your OTP Verification for app is ' + str(OTP) + ' Note..  Please enter otp within a minute , otherwise it becomes invalid'
 
